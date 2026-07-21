@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0d0b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>佛骨金匮</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <main class="scene">
+    <header class="masthead">
+      <div class="eyebrow"><span></span> LOST RELIC · 06 <span></span></div>
+      <h1>佛骨金匮</h1>
+      <p>找到六个正确的字，开启尘封的记忆</p>
+    </header>
+
+    <section class="puzzle" aria-label="六环解密机关">
+      <div class="reading-line" aria-hidden="true"><i></i><span></span><i></i></div>
+      <div class="box-shadow"></div>
+      <div class="lockbox" id="lockbox">
+        <div class="relic-light" aria-hidden="true"><span></span></div>
+        <div class="endcap left-cap"><div class="cap-glyph">☷</div></div>
+        <div class="axle left-axle"></div>
+        <div class="rings" id="rings"></div>
+        <div class="axle right-axle"></div>
+        <div class="endcap right-cap"><div class="cap-glyph">☰</div></div>
+        <div class="open-glow"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="status-line">
+        <span class="status-dot"></span>
+        <span id="statusText">找到六个正确的字，开启尘封的记忆</span>
+      </div>
+      <p class="hint">拖动金环旋转 · 滚轮微调 · 点击环后可使用方向键</p>
+      <div class="actions">
+        <button id="resetBtn" class="ghost-btn">扰乱机关</button>
+        <button id="unlockBtn" class="gold-btn"><span>检视机关</span><b>◆</b></button>
+      </div>
+    </section>
+
+    <div class="success" id="success" aria-hidden="true"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
